@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",             // Versión de JavaScript de salida
+    "module": "commonjs",           // Módulo para Node.js
+    "outDir": "./build",             // Directorio de salida para los archivos compilados
+    "rootDir": "./src",             // Directorio raíz de los archivos de entrada
+    "esModuleInterop": true,        // Para compatibilidad con módulos ES6
+    "skipLibCheck": true,           // Omite la verificación de tipos de archivos de definición
+    "forceConsistentCasingInFileNames": true,  // Consistencia en nombres de archivo
+    "strict": true,                 // Activa las verificaciones estrictas
+    "moduleResolution": "node",     // Resolución de módulos estilo Node.js
+    "resolveJsonModule": true,      // Permite importar JSON
+    "isolatedModules": true,        // Requerido para compilación independiente
+    "noEmit": false,                // Asegura que los archivos sean emitidos
+    "jsx": "react"                  // Transpilación de JSX
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
